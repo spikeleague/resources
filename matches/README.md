@@ -1,3 +1,3 @@
-# Match Resources
+# Match 
 
 Match-related resources covering fixtures, results, match information, and relevant statistics.
