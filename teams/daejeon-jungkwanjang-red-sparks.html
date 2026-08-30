@@ -3,20 +3,42 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Daejeon Jungkwanjang Red Sparks | SpikeLeague Resources</title>
-
 <meta name="description"
-      content="Resource hub Daejeon Jungkwanjang Red Sparks: profil tim, roster, kompetisi, jadwal, pertandingan, dan statistik.">
-
+   content="Daejeon Jungkwanjang Red Sparks team entity: profil tim, roster, jadwal, kompetisi, pemain, pertandingan, dan statistik.">
+<meta name="robots" content="index, follow">
 <link rel="canonical"
       href="https://spikeleague.github.io/resources/teams/daejeon-jungkwanjang-red-sparks.html">
+<meta property="og:type" content="website">
+<meta property="og:title"
+   content="Daejeon Jungkwanjang Red Sparks | SpikeLeague Resources">
+<meta property="og:description"
+   content="Team entity Daejeon Jungkwanjang Red Sparks dengan resource profil, roster, jadwal, kompetisi, pemain, pertandingan, dan statistik.">
+<meta property="og:url"
+   content="https://spikeleague.github.io/resources/teams/daejeon-jungkwanjang-red-sparks.html">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SportsTeam",
+  "@id": "https://spikeleague.github.io/resources/teams/daejeon-jungkwanjang-red-sparks.html#team",
+  "name": "Daejeon Jungkwanjang Red Sparks",
+  "sport": "Volleyball",
+  "url": "https://spikeleague.github.io/resources/teams/daejeon-jungkwanjang-red-sparks.html",
+  "memberOf": {
+    "@type": "SportsOrganization",
+    "name": "Korean V-League Women"
+  },
+  "location": {
+    "@type": "Place",
+    "name": "Daejeon, South Korea"
+  }
+}
+</script>
 
 <style>
 *{
   box-sizing:border-box;
 }
-
 body{
   margin:0;
   font-family:Arial,Helvetica,sans-serif;
@@ -24,15 +46,30 @@ body{
   color:#222;
   line-height:1.7;
 }
-
+a{
+  color:#a50018;
+}
 .container{
   max-width:1000px;
   margin:auto;
   padding:30px 20px 60px;
 }
 
-/* HERO */
+/* BREADCRUMB */
 
+.breadcrumb{
+  font-size:13px;
+  margin-bottom:15px;
+}
+.breadcrumb a{
+  color:#666;
+  text-decoration:none;
+}
+.breadcrumb a:hover{
+  text-decoration:underline;
+}
+
+/* HERO */
 .hero{
   background:linear-gradient(135deg,#8f0017,#d9001b);
   color:#fff;
@@ -41,20 +78,16 @@ body{
   margin-bottom:25px;
   box-shadow:0 10px 25px rgba(120,0,20,.15);
 }
-
 .hero h1{
   margin:0 0 10px;
   font-size:34px;
   line-height:1.25;
 }
-
 .hero p{
   margin:0;
   color:#ffe7ea;
 }
-
 /* SECTION */
-
 .section{
   background:#fff;
   border:1px solid #e4e7eb;
@@ -62,47 +95,51 @@ body{
   padding:25px;
   margin-bottom:25px;
 }
-
 .section h2{
   margin-top:0;
   color:#a50018;
   border-left:5px solid #d6001c;
   padding-left:12px;
 }
+/* IDENTITY */
+.identity{
+  background:#fff5f6;
+  border-left:5px solid #d6001c;
+  border-radius:10px;
+  padding:18px;
+  margin-bottom:20px;
+}
+.identity strong{
+  color:#a50018;
+}
 
 /* INFO */
-
 .info-grid{
   display:grid;
   grid-template-columns:repeat(2,1fr);
   gap:12px;
 }
-
 .info-item{
   background:#f8f9fb;
   border-radius:10px;
   padding:14px 16px;
 }
-
 .info-label{
   display:block;
   font-size:12px;
   color:#777;
   margin-bottom:3px;
 }
-
 .info-value{
   font-weight:bold;
 }
 
 /* RESOURCE GRID */
-
 .resource-grid{
   display:grid;
   grid-template-columns:repeat(2,1fr);
   gap:15px;
 }
-
 .resource{
   display:block;
   padding:18px;
@@ -113,265 +150,413 @@ body{
   background:#fff;
   transition:.2s ease;
 }
-
 .resource:hover{
   border-color:#d6001c;
   transform:translateY(-2px);
+  text-decoration:none;
 }
-
 .resource strong{
   display:block;
   color:#a50018;
   margin-bottom:5px;
 }
-
 .resource span{
   font-size:13px;
   color:#666;
 }
-
+/* SOURCE */
+.source{
+  background:#f8f9fb;
+  border:1px solid #e5e7eb;
+  border-radius:10px;
+  padding:18px;
+}
+.source a{
+  font-weight:bold;
+  text-decoration:none;
+}
+.source a:hover{
+  text-decoration:underline;
+}
 /* STATUS */
-
 .status{
   background:#fff8e8;
   border-left:5px solid #d6001c;
   border-radius:10px;
   padding:18px;
 }
-
 /* FOOTER */
-
 .footer{
   text-align:center;
   color:#777;
   font-size:13px;
   margin-top:30px;
 }
-
+/* MOBILE */
 @media(max-width:650px){
-
   .container{
     padding:20px 14px 40px;
   }
-
   .hero{
     padding:30px 22px;
   }
-
   .hero h1{
     font-size:27px;
   }
-
   .info-grid,
   .resource-grid{
     grid-template-columns:1fr;
   }
-
 }
 </style>
+
 </head>
-
 <body>
-
 <main class="container">
+  <!-- BREADCRUMB -->
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+<a href="../">
+  SpikeLeague Resources
+</a>
+/
 
+<a href="./">
+  Teams
+</a>
+
+/
+
+Daejeon Jungkwanjang Red Sparks
+  </nav>
   <!-- HERO -->
-
   <section class="hero">
-
-    <h1>Daejeon Jungkwanjang Red Sparks</h1>
-
-    <p>
-      Team Entity — Korean V-League Women
-    </p>
-
+<h1>Daejeon Jungkwanjang Red Sparks</h1>
+<p>Team Entity — Korean V-League Women</p>
   </section>
 
-
-  <!-- TEAM INFORMATION -->
+  <!-- TEAM IDENTITY -->
 
   <section class="section">
 
-    <h2>Team Information</h2>
+<h2>Team Identity</h2>
 
-    <div class="info-grid">
+<div class="identity">
 
-      <div class="info-item">
-        <span class="info-label">Nama Tim</span>
-        <span class="info-value">
-          Daejeon Jungkwanjang Red Sparks
-        </span>
-      </div>
+  <p>
+    <strong>Daejeon Jungkwanjang Red Sparks</strong>
+    adalah entitas tim bola voli yang menjadi bagian dari
+    Korean V-League Women.
+  </p>
 
-      <div class="info-item">
-        <span class="info-label">Kota</span>
-        <span class="info-value">
-          Daejeon, Korea Selatan
-        </span>
-      </div>
+  <p>
+    Halaman ini berfungsi sebagai pusat resource tim,
+    yang menghubungkan informasi profil, roster, jadwal,
+    kompetisi, pemain, pertandingan, dan statistik.
+  </p>
 
-      <div class="info-item">
-        <span class="info-label">Kompetisi</span>
-        <span class="info-value">
-          Korean V-League Women
-        </span>
-      </div>
+</div>
 
-      <div class="info-item">
-        <span class="info-label">Musim</span>
-        <span class="info-value">
-          2026/27
-        </span>
-      </div>
+<div class="info-grid">
 
-    </div>
+  <div class="info-item">
+    <span class="info-label">Team Name</span>
+    <span class="info-value">
+      Daejeon Jungkwanjang Red Sparks
+    </span>
+  </div>
+
+  <div class="info-item">
+    <span class="info-label">Sport</span>
+    <span class="info-value">
+      Volleyball
+    </span>
+  </div>
+
+  <div class="info-item">
+    <span class="info-label">Category</span>
+    <span class="info-value">
+      Women
+    </span>
+  </div>
+
+  <div class="info-item">
+    <span class="info-label">Competition</span>
+    <span class="info-value">
+      Korean V-League Women
+    </span>
+  </div>
+
+  <div class="info-item">
+    <span class="info-label">City</span>
+    <span class="info-value">
+      Daejeon
+    </span>
+  </div>
+
+  <div class="info-item">
+    <span class="info-label">Country</span>
+    <span class="info-value">
+      South Korea
+    </span>
+  </div>
+
+  <div class="info-item">
+    <span class="info-label">Season Context</span>
+    <span class="info-value">
+      2026/27
+    </span>
+  </div>
+
+  <div class="info-item">
+    <span class="info-label">Entity Type</span>
+    <span class="info-value">
+      Volleyball Team
+    </span>
+  </div>
+
+</div>
 
   </section>
-
 
   <!-- TEAM RESOURCES -->
 
   <section class="section">
 
-    <h2>Team Resources</h2>
+<h2>Team Resources</h2>
 
-    <div class="resource-grid">
+<div class="resource-grid">
 
-      <a class="resource"
-         href="https://spikeleague.blogspot.com/2026/08/profil-daejeon-jungkwanjang-red-sparks.html">
+  <a class="resource"
+     href="https://spikeleague.blogspot.com/2026/08/profil-daejeon-jungkwanjang-red-sparks.html">
 
-        <strong>Profil Tim</strong>
+    <strong>Profil Tim</strong>
 
-        <span>
-          Informasi dan profil Daejeon Jungkwanjang Red Sparks.
-        </span>
+    <span>
+      Informasi profil dan identitas Daejeon Jungkwanjang
+      Red Sparks.
+    </span>
 
-      </a>
-
-
-      <a class="resource"
-         href="https://spikeleague.blogspot.com/2026/08/skuad-daejeon-jungkwanjang-red-sparks.html">
-
-        <strong>Skuad</strong>
-
-        <span>
-          Daftar pemain dan komposisi skuad Red Sparks.
-        </span>
-
-      </a>
+  </a>
 
 
-      <a class="resource"
-         href="https://spikeleague.blogspot.com/2026/08/jadwal-daejeon-jungkwanjang-red-sparks-2026-27.html">
+  <a class="resource"
+     href="https://spikeleague.blogspot.com/2026/08/skuad-daejeon-jungkwanjang-red-sparks.html">
 
-        <strong>Jadwal</strong>
+    <strong>Roster / Skuad</strong>
 
-        <span>
-          Jadwal pertandingan Red Sparks musim 2026/27.
-        </span>
+    <span>
+      Daftar pemain dan komposisi skuad Red Sparks
+      musim 2026/27.
+    </span>
 
-      </a>
-
-
-      <a class="resource"
-         href="https://spikeleague.github.io/resources/players/">
-
-        <strong>Players</strong>
-
-        <span>
-          Player entities yang terkait dengan tim.
-        </span>
-
-      </a>
+  </a>
 
 
-      <a class="resource"
-         href="https://spikeleague.github.io/resources/matches/">
+  <a class="resource"
+     href="https://spikeleague.blogspot.com/2026/08/jadwal-daejeon-jungkwanjang-red-sparks-2026-27.html">
 
-        <strong>Matches</strong>
+    <strong>Schedule</strong>
 
-        <span>
-          Resource pertandingan yang melibatkan Red Sparks.
-        </span>
+    <span>
+      Jadwal pertandingan Red Sparks pada musim 2026/27.
+    </span>
 
-      </a>
+  </a>
 
 
-      <a class="resource"
-         href="https://spikeleague.github.io/resources/statistics/">
+  <a class="resource"
+     href="../players/">
 
-        <strong>Statistics</strong>
+    <strong>Players</strong>
 
-        <span>
-          Resource statistik dan data performa.
-        </span>
+    <span>
+      Database player entity yang berkaitan dengan
+      Daejeon Jungkwanjang Red Sparks.
+    </span>
 
-      </a>
+  </a>
 
-    </div>
+
+  <a class="resource"
+     href="../matches/">
+
+    <strong>Matches</strong>
+
+    <span>
+      Resource pertandingan yang melibatkan Red Sparks.
+    </span>
+
+  </a>
+
+
+  <a class="resource"
+     href="../statistics/">
+
+    <strong>Statistics</strong>
+
+    <span>
+      Resource statistik dan data performa tim.
+    </span>
+
+  </a>
+
+</div>
 
   </section>
-
 
   <!-- COMPETITIONS -->
 
   <section class="section">
 
-    <h2>Competitions</h2>
+<h2>Competitions</h2>
 
-    <div class="resource-grid">
+<div class="resource-grid">
 
-      <a class="resource"
-         href="https://spikeleague.github.io/resources/competitions/">
+  <a class="resource"
+     href="../competitions/">
 
-        <strong>Korean V-League</strong>
+    <strong>Korean V-League</strong>
 
-        <span>
-          Kompetisi utama Daejeon Jungkwanjang Red Sparks.
-        </span>
+    <span>
+      Kompetisi utama yang menjadi konteks tim
+      Daejeon Jungkwanjang Red Sparks.
+    </span>
 
-      </a>
+  </a>
 
+  <a class="resource"
+     href="https://spikeleague.blogspot.com/2026/08/jadwal-lengkap-kovo-cup-2026-putri.html">
 
-      <a class="resource"
-         href="https://spikeleague.blogspot.com/2026/08/jadwal-lengkap-kovo-cup-2026-putri.html">
+    <strong>KOVO Cup 2026</strong>
 
-        <strong>KOVO Cup 2026</strong>
+    <span>
+      Resource terkait partisipasi Red Sparks dalam
+      KOVO Cup 2026.
+    </span>
 
-        <span>
-          Resource terkait partisipasi Red Sparks di KOVO Cup 2026.
-        </span>
+  </a>
 
-      </a>
-
-    </div>
+</div>
 
   </section>
 
+  <!-- ENTITY RELATIONSHIPS -->
+
+  <section class="section">
+
+<h2>Entity Relationships</h2>
+
+<p>
+  Team entity ini menjadi penghubung antara Daejeon
+  Jungkwanjang Red Sparks dengan entitas dan resource
+  lain di SpikeLeague Resources.
+</p>
+
+<div class="resource-grid">
+
+  <a class="resource"
+     href="../players/">
+
+    <strong>Team → Players</strong>
+
+    <span>
+      Hubungan tim dengan pemain yang terdaftar atau
+      terkait dengan skuad.
+    </span>
+
+  </a>
+
+  <a class="resource"
+     href="../competitions/">
+
+    <strong>Team → Competitions</strong>
+
+    <span>
+      Hubungan tim dengan kompetisi yang diikuti.
+    </span>
+
+  </a>
+
+  <a class="resource"
+     href="../matches/">
+
+    <strong>Team → Matches</strong>
+
+    <span>
+      Hubungan tim dengan pertandingan.
+    </span>
+
+  </a>
+
+
+  <a class="resource"
+     href="../statistics/">
+
+    <strong>Team → Statistics</strong>
+
+    <span>
+      Hubungan tim dengan data statistik dan performa.
+    </span>
+
+  </a>
+
+</div>
+
+  </section>
+
+  <!-- SOURCE -->
+
+  <section class="section">
+
+<h2>Source</h2>
+
+<div class="source">
+
+  <p>
+    Resource ini menggunakan halaman profil SpikeLeague
+    sebagai sumber konten tim.
+  </p>
+
+  <p>
+    <a href="https://spikeleague.blogspot.com/2026/08/profil-daejeon-jungkwanjang-red-sparks.html"
+       rel="noopener">
+      Profil Daejeon Jungkwanjang Red Sparks
+    </a>
+  </p>
+
+</div>
+
+  </section>
 
   <!-- DATA STATUS -->
 
   <section class="section">
 
-    <h2>Data Status</h2>
+<h2>Data Status</h2>
 
-    <div class="status">
+<div class="status">
 
-      <strong>Catatan:</strong>
+  <strong>Catatan pembaruan:</strong>
 
-      Data pemain, roster, pertandingan, dan statistik pada
-      resource ini dapat diperbarui berdasarkan sumber resmi,
-      registrasi kompetisi, dan perubahan roster.
+  <p>
+    Data tim, roster, pertandingan, jadwal, kompetisi,
+    dan statistik dapat berubah berdasarkan sumber resmi,
+    registrasi kompetisi, perubahan roster, serta
+    pembaruan data pertandingan.
+  </p>
 
-    </div>
+  <p>
+    Resource ini akan diperbarui apabila terdapat
+    informasi baru yang telah dikonfirmasi.
+  </p>
+
+</div>
 
   </section>
 
-
   <div class="footer">
-
-    SpikeLeague Resources · Team Entity
-
+SpikeLeague Resources · Team Entity ·
+Daejeon Jungkwanjang Red Sparks
   </div>
 
 </main>
