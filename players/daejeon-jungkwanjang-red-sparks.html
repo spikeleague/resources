@@ -155,6 +155,73 @@
     .info-grid, 
     .resource-grid{ grid-template-columns:1fr; } 
     .player-table{ font-size:13px; } } 
+    <!-- CSS Pemain -->
+<style>
+
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{
+    font-family: "Segoe UI", Roboto, Arial, sans-serif;
+    background:var(--bg);
+    color:var(--text);
+    padding:24px;
+    line-height:1.5;
+  }
+  .container{
+    max-width:960px;
+    margin:0 auto;
+  }
+
+  .section-title{
+    padding:14px 20px;
+    background:#fafafa;
+    border-bottom:1px solid var(--border);
+    font-weight:700;
+    font-size:1.05rem;
+    color:var(--primary-dark);
+  }
+  table{
+    width:100%;
+    border-collapse:collapse;
+    font-size:.92rem;
+  }
+  thead th{
+    background:var(--red);
+    text-align:left;
+    padding:10px 14px;
+    font-weight:600;
+    color:#FFF;
+    border-bottom:2px solid var(--border);
+    white-space:nowrap;
+  }
+  tbody td{
+    padding:10px 14px;
+    border-bottom:1px solid var(--border);
+    vertical-align:middle;
+  }
+  tbody tr:last-child td{border-bottom:none;}
+  tbody tr:hover{background:#fdf3f4;}
+  td.nama a{
+    color:#2b2929;
+    text-decoration:none;
+    font-weight:600;
+  }
+  td.nama a:hover{text-decoration:underline;}
+  .badge-negara{
+    display:inline-block;
+    font-size:.78rem;
+    padding:2px 8px;
+    border-radius:999px;
+    background:#eef1f4;
+    color:var(--muted);
+  }
+  td.posisi{color:var(--text);}
+  td.center, th.center{text-align:center;}
+  .empty-note{
+    padding:20px;
+    text-align:center;
+    color:var(--muted);
+    font-style:italic;
+  }
 </style>
   
 </head>
@@ -197,198 +264,238 @@
 </div>
 </section>
 
-<!-- SETTER -->
-<section class="section">
-<div class="player-group">
-  <h3>Setter</h3>
-  <div class="table-wrap">
-    <table class="player-table">
-      <thead>
-        <tr>
-          <th>Pemain</th>
-          <th>Negara</th>
-          <th>Tinggi</th>
-          <th>Tahun Lahir</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td class="player-name">Hye-Seon Yeum</td>
-          <td>Korea Selatan</td>
-          <td>178 cm</td>
-          <td>1991</td>
-        </tr>
-        <tr>
-          <td class="player-name">Seo-Hyun Choi</td>
-          <td>Korea Selatan</td>
-          <td>178 cm</td>
-          <td>2005</td>
-        </tr>
-      </tbody>
-    </table>
+  <!-- TEAM INFO -->
+  <div class="rs-info">
+    <strong>Informasi Skuad</strong>
+    <ul>
+      <li><strong>Klub:</strong>Daejeon Jungkwanjang Red Sparks</li>
+      <li><strong>Kompetisi:</strong>Korean V-League Women</li>
+      <li><strong>Musim:</strong>2026/27</li>
+      <li><strong>Kota:</strong>Daejeon, Korea Selatan</li>
+      <li><strong>Jumlah pemain yang tercatat :</strong>15 pemain</li>
+    </ul>
   </div>
-</div>
 
-<!-- OPPOSITE -->
-<div class="player-group">
-  <h3>Opposite</h3>
-  <div class="table-wrap">
-    <table class="player-table">
+<div class="container">
+    <h1>Daftar Pemain</h1>
+    <div class="section-title">Setter</div>
+    <table>
       <thead>
         <tr>
-          <th>Pemain</th>
-          <th>Negara</th>
-          <th>Tinggi</th>
-          <th>Tahun Lahir</th>
+          <th class="center">No</th>
+          <th class="center">Nama</th>
+          <th class="center">Negara</th>
+          <th class="center">Posisi</th>
+          <th class="center">Tinggi</th>
+          <th class="center">Tahun Lahir</th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <td class="player-name">Eun-Ji Shin</td>
-          <td>Korea Selatan</td>
-          <td>178 cm</td>
-          <td>2005</td>
+          <td class="center">3</td>
+          <td class="nama">Hye-Seon Yeum ★</td>
+          <td><span class="badge-negara">Korea Selatan</span></td>
+          <td class="posisi">Setter</td>
+          <td class="center">178 cm</td>
+          <td class="center">1991</td>
         </tr>
-        <tr>
-          <td class="player-name">Vanja Bukilić</td>
-          <td>Serbia</td>
-          <td>198 cm</td>
-          <td>1999</td>
+        <tr style="background:#fcebeb">
+          <td class="center">19</td>
+          <td class="nama">Seo-Hyun Choi</td>
+          <td><span class="badge-negara">Korea Selatan</span></td>
+          <td class="posisi">Setter</td>
+          <td class="center">178 cm</td>
+          <td class="center">2005</td>
         </tr>
-      </tbody>
+        </tbody>
     </table>
   </div>
-</div>
-
-<!-- OUTSIDE HITTER -->
-<div class="player-group">
-  <h3>Outside Hitter</h3>
-  <div class="table-wrap">
-    <table class="player-table">
+<div class="container">
+   <div class="section-title">Opposite</div>
+    <table>
       <thead>
         <tr>
-          <th>Pemain</th>
-          <th>Negara</th>
-          <th>Tinggi</th>
-          <th>Tahun Lahir</th>
+          <th class="center">No</th>
+          <th class="center">Nama</th>
+          <th class="center">Negara</th>
+          <th class="center">Posisi</th>
+          <th class="center">Tinggi</th>
+          <th class="center">Tahun Lahir</th>
         </tr>
       </thead>
-      <tbody>
+      <tbody>        
         <tr>
-          <td class="player-name">Hui Zhong</td>
-          <td>Tiongkok</td>
-          <td>185 cm</td>
-          <td>1997</td>
+          <td class="center">16</td>
+          <td class="nama">Eun-Ji Shin</td>
+          <td><span class="badge-negara">Korea Selatan</span></td>
+          <td class="posisi">Opposite</td>
+          <td class="center">178 cm</td>
+          <td class="center">2005</td>
         </tr>
-        <tr>
-          <td class="player-name">Hye-Min Park</td>
-          <td>Korea Selatan</td>
-          <td>181 cm</td>
-          <td>2000</td>
+        <tr style="background:#fcebeb">
+          <td class="center">33</td>
+          <td class="nama">Vanja Bukilić</td>
+          <td><span class="badge-negara">Serbia</span></td>
+          <td class="posisi">Opposite</td>
+          <td class="center">198 cm</td>
+          <td class="center">1999</td>
         </tr>
-        <tr>
-          <td class="player-name">Ji-Yun Kim</td>
-          <td>Korea Selatan</td>
-          <td>180 cm</td>
-          <td>2007</td>
-        </tr>
-        <tr>
-          <td class="player-name">Da-Bin Jeon</td>
-          <td>Korea Selatan</td>
-          <td>175 cm</td>
-          <td>2006</td>
-        </tr>
-        <tr>
-          <td class="player-name">Yeo-Reum Park</td>
-          <td>Korea Selatan</td>
-          <td>182 cm</td>
-          <td>2007</td>
-        </tr>
-        <tr>
-          <td class="player-name">Seon-Ok Gwak</td>
-          <td>Korea Selatan</td>
-          <td>178 cm</td>
-          <td>2005</td>
-        </tr>
-      </tbody>
+        </tbody>
     </table>
   </div>
-</div>
-
-<!-- MIDDLE BLOCKER -->
-<div class="player-group">
-  <h3>Middle Blocker</h3>
-  <div class="table-wrap">
-    <table class="player-table">
+<div class="container">
+   <div class="section-title">Outside Hitter</div>
+    <table>
       <thead>
         <tr>
-          <th>Pemain</th>
-          <th>Negara</th>
-          <th>Tinggi</th>
-          <th>Tahun Lahir</th>
+          <th class="center">No</th>
+          <th class="center">Nama</th>
+          <th class="center">Negara</th>
+          <th class="center">Posisi</th>
+          <th class="center">Tinggi</th>
+          <th class="center">Tahun Lahir</th>
         </tr>
       </thead>
-      <tbody>
+      <tbody>        
         <tr>
-          <td class="player-name">Eun-Jin Park</td>
-          <td>Korea Selatan</td>
-          <td>187 cm</td>
-          <td>1999</td>
+          <td class="center">7</td>
+          <td class="nama">Hui Zhong</td>
+          <td><span class="badge-negara">Tiongkok</span></td>
+          <td class="posisi">Outside Hitter</td>
+          <td class="center">185 cm</td>
+          <td class="center">1997</td>
+        </tr>
+        <tr style="background:#fcebeb">
+          <td class="center">10</td>
+          <td class="nama">Hye-Min Park</td>
+          <td><span class="badge-negara">Korea Selatan</span></td>
+          <td class="posisi">Outside Hitter</td>
+          <td class="center">181 cm</td>
+          <td class="center">2000</td>
         </tr>
         <tr>
-          <td class="player-name">Seon-Woo Lee</td>
-          <td>Korea Selatan</td>
-          <td>183 cm</td>
-          <td>2002</td>
+          <td class="center">12</td>
+          <td class="nama">Ji-Yun Kim</td>
+          <td><span class="badge-negara">Korea Selatan</span></td>
+          <td class="posisi">Outside Hitter</td>
+          <td class="center">180 cm</td>
+          <td class="center">2007</td>
+        </tr>
+        <tr style="background:#fcebeb">
+          <td class="center">17</td>
+          <td class="nama">Da-Bin Jeon</td>
+          <td><span class="badge-negara">Korea Selatan</span></td>
+          <td class="posisi">Outside Hitter</td>
+          <td class="center">175 cm</td>
+          <td class="center">2006</td>
         </tr>
         <tr>
-          <td class="player-name">Ji-Soo Lee</td>
-          <td>Korea Selatan</td>
-          <td>183 cm</td>
-          <td>2003</td>
+          <td class="center">23</td>
+          <td class="nama">Yeo-Reum Park</td>
+          <td><span class="badge-negara">Korea Selatan</span></td>
+          <td class="posisi">Outside Hitter</td>
+          <td class="center">182 cm</td>
+          <td class="center">2007</td>
         </tr>
-      </tbody>
+        <tr style="background:#fcebeb">
+          <td class="center">24</td>
+          <td class="nama">Seon-Ok Gwak</td>
+          <td><span class="badge-negara">Korea Selatan</span></td>
+          <td class="posisi">Outside Hitter</td>
+          <td class="center">178 cm</td>
+          <td class="center">2005</td>
+        </tr>
+        </tbody>
     </table>
   </div>
-</div>
-
-<!-- LIBERO -->
-<div class="player-group">
-  <h3>Libero</h3>
-  <div class="table-wrap">
-    <table class="player-table">
+<div class="container">
+   <div class="section-title">Middle-blocker</div>
+    <table>
       <thead>
         <tr>
-          <th>Pemain</th>
-          <th>Negara</th>
-          <th>Tinggi</th>
-          <th>Tahun Lahir</th>
+          <th class="center">No</th>
+          <th class="center">Nama</th>
+          <th class="center">Negara</th>
+          <th class="center">Posisi</th>
+          <th class="center">Tinggi</th>
+          <th class="center">Tahun Lahir</th>
         </tr>
       </thead>
-      <tbody>
+      <tbody>        
         <tr>
-          <td class="player-name">Ran Noh</td>
-          <td>Korea Selatan</td>
-          <td>167 cm</td>
-          <td>1994</td>
+          <td class="center">6</td>
+          <td class="nama">Eun-Jin Park</td>
+          <td><span class="badge-negara">Korea Selatan</span></td>
+          <td class="posisi">Middle-blocker</td>
+          <td class="center">187 cm</td>
+          <td class="center">1999</td>
+        </tr>
+        <tr style="background:#fcebeb">
+          <td class="center">15</td>
+          <td class="nama">Seon-Woo Lee</td>
+          <td><span class="badge-negara">Korea Selatan</span></td>
+          <td class="posisi">Middle-blocker</td>
+          <td class="center">183 cm</td>
+          <td class="center">2002</td>
         </tr>
         <tr>
-          <td class="player-name">Su-Been Do</td>
-          <td>Korea Selatan</td>
-          <td>166 cm</td>
-          <td>1998</td>
+          <td class="center">18</td>
+          <td class="nama">Ji-Soo Lee</td>
+          <td><span class="badge-negara">Korea Selatan</span></td>
+          <td class="posisi">Middle-blocker</td>
+          <td class="center">183 cm</td>
+          <td class="center">2003</td>
+        </tr>
+        </tbody>
+    </table>
+  </div>
+<div class="container">
+   <div class="section-title">Libero</div>
+    <table>
+      <thead>
+        <tr>
+          <th class="center">No</th>
+          <th class="center">Nama</th>
+          <th class="center">Negara</th>
+          <th class="center">Posisi</th>
+          <th class="center">Tinggi</th>
+          <th class="center">Tahun Lahir</th>
+        </tr>
+      </thead>
+      <tbody>        
+        <tr>
+          <td class="center">5</td>
+          <td class="nama">Ran Noh</td>
+          <td><span class="badge-negara">Korea Selatan</span></td>
+          <td class="posisi">Libero</td>
+          <td class="center">167 cm</td>
+          <td class="center">1994</td>
+        </tr>
+        <tr style="background:#fcebeb">
+          <td class="center">8</td>
+          <td class="nama">Su-Been Do</td>
+          <td><span class="badge-negara">Korea Selatan</span></td>
+          <td class="posisi">Libero</td>
+          <td class="center">166 cm</td>
+          <td class="center">1998</td>
         </tr>
         <tr>
-          <td class="player-name">Hyo-Seo Choi</td>
-          <td>Korea Selatan</td>
-          <td>168 cm</td>
-          <td>2004</td>
+          <td class="center">20</td>
+          <td class="nama">Hyo-Seo Choi</td>
+          <td><span class="badge-negara">Korea Selatan</span></td>
+          <td class="posisi">Libero</td>
+          <td class="center">168 cm</td>
+          <td class="center">2004</td>
         </tr>
       </tbody>
     </table>
   </div>
-</div>
-</section>
+ 
+  <div class="card">
+    <div class="section-title">Anggota Staf</div>
+    <div class="empty-note">Tidak ada data staf yang ditemukan pada sumber referensi.</div>
+  </div>
+</div></section>
 
 <!-- TEAM RESOURCES -->
 <section class="section">
